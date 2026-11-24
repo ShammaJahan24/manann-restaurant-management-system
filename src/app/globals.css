@@ -1,0 +1,52 @@
+
+@import "tailwindcss";
+
+:root {
+  /* Coral + Charcoal Theme */
+  --primary: #F06449;
+  --primary-hover: #E14F36;
+  --primary-soft: #E98570;
+  --primary-light: #FFD5C9;
+
+  --charcoal: #263238;
+  --background: #F5F3F0;
+  --foreground: #263238;
+  --white: #FFFFFF;
+
+  /* Supporting colours */
+  --text-muted: #788087;
+  --border: #E9E5E1;
+  --success: #26966F;
+  --warning: #E6A23C;
+  --danger: #DC5555;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* Consistent selection colour */
+::selection {
+  background: var(--primary-light);
+  color: var(--charcoal);
+}
